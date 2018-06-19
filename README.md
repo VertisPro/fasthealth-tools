@@ -2,7 +2,7 @@
     <img
       alt="FastHealth"
       src="https://vertispro.com/img/fasthealth_logo.svg"
-      width="400"
+      width="200"
     />
 </p>
 
