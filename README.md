@@ -41,7 +41,7 @@ sspaf -d -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
 ```
 ### (Under Construction) SHNM - Sensible Human Name Masking Tool
 The tool takes in human names and genders and produces sensible human names along with masking information.
-For example, one could effectively mask patient, next-of-kin, clinican names with sensible sounding names and provide corelated informaion on the mask so that data could be de-identified in the future. This sort of ensures compliance with certain GDPR requirements where data can be retroactively deleted from the extracted set at a later time by simply providing a ID that needs to be deleted.
+For example, one could effectively mask patient, next-of-kin, clinican names with sensible sounding names and provide corelated informaion on the mask so that data could be de-identified in the future. This (sort of) ensures compliance with certain GDPR requirements where data can be retroactively deleted from the extracted set at a later time by simply providing a ID that needs to be deleted.
 
 * The correlation is provided using Universally Unique Lexicographically Sortable Identifier ([ULID][])
 * Ability to generate nearly 5 million unique and sensible names in each gender
