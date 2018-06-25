@@ -9,7 +9,7 @@
 
 FastHealth-Tools is a set of open source data munging tools and utilities for healthcare data provided by [VertisPro][]. 
 
-These tools provide a preliminary set of data identification and cleaning tools that are often required when dealing with healthcare data in machine learning and data analytics.
+The aim is to provide a set of production ready tools and utilities that can operate on healthcare data to carry out identification, cleanup and transformation operations which are often required when preparing data for use in analytics, machine learning and AI.
 
 Some tools and utilities may require an understanding of healthcare IT topics like [FHIR][] and terminologies such as [SNOMED CT][], [ICD-10][] and [CPT][].
 
