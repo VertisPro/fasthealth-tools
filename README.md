@@ -7,18 +7,24 @@
     />
 </p>
 
-FastHealth-Tools is a set of data munging tools and utilities for healthcare data provided by [VertisPro][]. 
+FastHealth-Tools is a set of open source data munging tools and utilities for healthcare data provided by [VertisPro][]. 
 
 These tools provide a preliminary set of data identification and cleaning tools that are often required when dealing with healthcare data in machine learning and data analytics.
 
-In case you wish to get started, it may help to readup on FHIR and terminologies such as SNOMED CT, ICD10 and CPT.
+Some tools and utilities may require an understanding of healthcare IT topics like [FHIR][] and terminologies such as [SNOMED CT][], [ICD-10][] and [CPT][].
 
-## Utilities
+## Tools
 
 ### filecrypt
-filecrypt encrypts and decrypts a file using a passphrase supplied to it. 
-* PBHDF2 is used for generating key from the passphrase and the file is encrytped using AES-128. 
+Super simple PBKDF2 + AES-128 encryption and decryption for files
+* filecrypt encrypts and decrypts a file using a passphrase supplied to it. 
+* PBKDF2 is used for generating key from the passphrase.
+* AES-128 is used for data encryption.
 * There is currently no consensus for an encryted file format so the utility implements its own.
-* The utility is meant for automated usage and does not prompt while over writing files.
+* The utility is meant for automated / batch usage and does not prompt while over writing files.
 
 [VertisPro]: https://vertispro.com
+[FHIR]: https://www.hl7.org/fhir
+[SNOMED CT]: https://www.snomed.org/snomed-ct
+[ICD-10]: https://en.wikipedia.org/wiki/ICD-10
+[CPT]: https://en.wikipedia.org/wiki/Current_Procedural_Terminology
