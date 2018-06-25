@@ -7,16 +7,16 @@
     />
 </p>
 
-FastHealth-Tools is a set of open source data munging tools and utilities for healthcare data provided by [VertisPro][]. 
+FastHealth-Tools is a set of open source data munging tools (and utilities) for healthcare data provided by [VertisPro][]. 
 
-The aim is to provide a set of simple but powerful tools and utilities that can operate on healthcare data to carry out identification, cleanup, structuring and transformation operations which are often required when preparing data for use in analytics, machine learning and AI.
+The aim is to provide a set of simple but powerful tools that can operate on healthcare data to carry out identification, cleanup, structuring and transformation operations which are often required when preparing data for use in analytics, machine learning and AI.
 
-Some tools and utilities may require an understanding of healthcare IT topics like [FHIR][] and terminologies such as [SNOMED CT][], [ICD-10][] and [CPT][].
+Some tools may require an understanding of healthcare IT topics like [FHIR][] and terminologies such as [SNOMED CT][], [ICD-10][] and [CPT][].
 
 ## Utilities
 
 ### SSPAF: Super Simple PBKDF2 + AES-128 encryption and decryption for Files
-The utility could be used in cases where large amounts of sensitive data needs to be encrypted and stored in seperate files.
+The tool could be used in cases where large amounts of sensitive data needs to be encrypted and stored in seperate files.
 * Encrypts and decrypts a file using a passphrase supplied . 
 * PBKDF2 is used for generating key from the passphrase.
 * AES-128 is used for data encryption.
