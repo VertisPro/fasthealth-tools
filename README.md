@@ -40,7 +40,7 @@ Decryption Example:
 sspaf -d -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
 ```
 
-[VertisPro]: https://vertispro.com
+[VertisPro]: https://www.vertispro.com
 [FHIR]: https://www.hl7.org/fhir
 [SNOMED CT]: https://www.snomed.org/snomed-ct
 [ICD-10]: https://en.wikipedia.org/wiki/ICD-10
