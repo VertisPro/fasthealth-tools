@@ -13,7 +13,7 @@ The aim is to provide a set of simple but powerful tools that can operate on hea
 
 Some tools may require an understanding of healthcare IT topics like [FHIR][] and terminologies such as [SNOMED CT][], [ICD-10][] and [CPT][].
 
-## Utilities
+## Tools
 
 ### SSPAF: Super Simple PBKDF2 + AES-128 encryption and decryption for Files
 The tool could be used in cases where large amounts of sensitive data needs to be encrypted and stored in seperate files.
