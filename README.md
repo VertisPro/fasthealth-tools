@@ -13,15 +13,22 @@ These tools provide a preliminary set of data identification and cleaning tools 
 
 Some tools and utilities may require an understanding of healthcare IT topics like [FHIR][] and terminologies such as [SNOMED CT][], [ICD-10][] and [CPT][].
 
-## Tools
+## Utilities
 
-### filecrypt
-Super simple PBKDF2 + AES-128 encryption and decryption for files
-* filecrypt encrypts and decrypts a file using a passphrase supplied to it. 
+### SSPAF - Super Simple PBKDF2 + AES-128 encryption and decryption for Files
+* Encrypts and decrypts a file using a passphrase supplied . 
 * PBKDF2 is used for generating key from the passphrase.
 * AES-128 is used for data encryption.
 * There is currently no consensus for an encryted file format so the utility implements its own.
 * The utility is meant for automated / batch usage and does not prompt while over writing files.
+
+Command Line Usage
+```Shell
+-p  (Required) Passphrase for encrypting or decrypting the file
+-i  (Required) Input file
+-o  (Required) Output file
+-d  Decrypt - by defualt the utility will only encrypt the file
+```
 
 [VertisPro]: https://vertispro.com
 [FHIR]: https://www.hl7.org/fhir
