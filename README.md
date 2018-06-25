@@ -7,7 +7,7 @@
     />
 </p>
 
-FastHealth-Tools is a set of data munging tools in healthcare provided by [VertisPro][]. 
+FastHealth-Tools is a set of data munging tools and utilities for healthcare data provided by [VertisPro][]. 
 
 These tools provide a preliminary set of data identification and cleaning tools that are often required when dealing with healthcare data in machine learning and data analytics.
 
