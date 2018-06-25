@@ -9,11 +9,11 @@ import (
 )
 
 func printusage() {
-	fmt.Fprintf(os.Stderr, "This utility encrypts and decrypts a file using the supplied passphrase.\r\n"+
+	fmt.Fprintf(os.Stderr, "This tool encrypts and decrypts a file using the supplied passphrase.\r\n"+
 		"PBKDF2 is used for generating keys and the file is encrytped using AES-128.\r\n"+
 		"There is currently no consensus for an encryted file format so the utility implements its own.\r\n"+
-		"The utility is meant for automated/batch usage and does not prompt when over-writing files. \r\n"+
-		"The utility is provided as part of the FastHealth open source tools under the MIT license.\r\n")
+		"The tool is meant for automated/batch usage and does not prompt when over-writing files. \r\n"+
+		"It is provided as part of the FastHealth open source tools under the MIT license.\r\n")
 	flag.PrintDefaults()
 	os.Exit(0)
 }
