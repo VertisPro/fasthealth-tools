@@ -16,6 +16,7 @@ Some tools and utilities may require an understanding of healthcare IT topics li
 ## Utilities
 
 ### SSPAF - Super Simple PBKDF2 + AES-128 encryption and decryption for Files
+The utility could be used in cases where large amounts of sensitive data needs to be encrypted and stored in seperate files.
 * Encrypts and decrypts a file using a passphrase supplied . 
 * PBKDF2 is used for generating key from the passphrase.
 * AES-128 is used for data encryption.
