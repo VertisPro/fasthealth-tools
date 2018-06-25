@@ -22,12 +22,16 @@ Some tools and utilities may require an understanding of healthcare IT topics li
 * There is currently no consensus for an encryted file format so the utility implements its own.
 * The utility is meant for automated / batch usage and does not prompt while over writing files.
 
-Command Line Usage
+Command Line Usage:
 ```Shell
 -p  (Required) Passphrase for encrypting or decrypting the file
 -i  (Required) Input file
 -o  (Required) Output file
 -d  Decrypt - by defualt the utility will only encrypt the file
+```
+Example:
+```Shell
+sspaf -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
 ```
 
 [VertisPro]: https://vertispro.com
