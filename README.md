@@ -29,9 +29,14 @@ Command Line Usage:
 -o  (Required) Output file
 -d  Decrypt - by defualt the utility will only encrypt the file
 ```
-Example:
+Encryption Example:
 ```Shell
 sspaf -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
+```
+
+Decryption Example:
+```Shell
+sspaf -d -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
 ```
 
 [VertisPro]: https://vertispro.com
