@@ -54,7 +54,6 @@ func main() {
 	gender := flag.String("g", "", "Gender of the human names to be generated 'f' for females and 'm' for males. will generate female if unspecified")
 	genUlids := flag.Bool("u", false, "Generate ULID's (false by default), set to true if you want them")
 	flag.Parse()
-	fmt.Println(*genUlids)
 	if *numsamples > 25000000 {
 		fmt.Fprintf(os.Stderr, "Too many samples requested or unspecified input\r\n")
 		os.Exit(1)
