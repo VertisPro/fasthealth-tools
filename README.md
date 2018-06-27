@@ -43,9 +43,11 @@ sspaf -d -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
 The tool produces sensible human names along with masking information. This could be used for example to effectively mask patient, next-of-kin, clinican names with sensible sounding names and provide corelated informaion with the mask so that data could be re-identified in the future. This (sort of) ensures compliance with certain GDPR requirements where data can be retroactively deleted from the extracted set at a later time by simply providing a ID that needs to be deleted.
 
 * The correlation is provided using Universally Unique Lexicographically Sortable Identifier ([ULID][])
-* Ability to generate ~more than 5~ upto 25  million unique and sensible names in each gender (capacity can be easily augmented)
-* Provides name clash avoidance (requires tool config and state to be saved)
+* Ability to generate ~more than 5~ upto 25  million unique and sensible names in each gender (capacity can be easily augmented).
+* Provides name clash avoidance and provides (2) vectors in case patients need to be added later.
+* ULID's are unique and lexicographically sortable and can be used as demographic identifiers.
 
+ The ULI
 Command Line Usage:
 ```Shell
 -n  Number of human names to be generated (max 25 million)
