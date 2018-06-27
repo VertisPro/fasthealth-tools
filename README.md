@@ -15,7 +15,7 @@ Some tools may require an understanding of healthcare IT topics like [FHIR][] an
 
 ## Tools
 
-### SSPAF: Super Simple PBKDF2 + AES-128 encryption and decryption for Files
+### Simple PBKDF2 + AES-128 encryption and decryption for Files (SPAF)
 The tool could be used in cases where large amounts of sensitive data needs to be encrypted and stored in seperate files.
 * Encrypts and decrypts a file using a passphrase supplied . 
 * PBKDF2 is used for generating key from the passphrase.
@@ -39,7 +39,7 @@ Decryption Example:
 ```Shell
 sspaf -d -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
 ```
-### (Under Construction) SHNM - Sensible Human Name Masking Tool
+### Sensible Human Name Masking Tool (SHNM)
 The tool produces sensible human names along with masking information. This could be used gor example to effectively mask patient, next-of-kin, clinican names with sensible sounding names and provide corelated informaion with the mask so that data could be re-identified in the future. This (sort of) ensures compliance with certain GDPR requirements where data can be retroactively deleted from the extracted set at a later time by simply providing a ID that needs to be deleted.
 
 * The correlation is provided using Universally Unique Lexicographically Sortable Identifier ([ULID][])
