@@ -24,19 +24,19 @@ The tool could be used in cases where large amounts of sensitive data needs to b
 * The utility is meant for automated / batch usage and does not prompt while over writing files.
 
 Command Line Usage:
-```Shell
+```bash
 -p  (Required) Passphrase for encrypting or decrypting the file
 -i  (Required) Input file
 -o  (Required) Output file
 -d  Decrypt - by defualt the utility will only encrypt the file
 ```
 Encryption Example:
-```Shell
+```bash
 sspaf -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
 ```
 
 Decryption Example:
-```Shell
+```bash
 sspaf -d -p klJ9@0823r2$hk -i patients_otp.csv -o patients_otp_csv.enc
 ```
 ### Sensible Human Name Masking Tool (SHNM)
@@ -49,13 +49,13 @@ The tool produces sensible human names along with masking information. This coul
 
  The ULI
 Command Line Usage:
-```Shell
+```bash
 -n  Number of human names to be generated (max 25 million)
 -g Gender of the human names to be generated 'f' for females and 'm' for males. will generate female if unspecified
 -u Generate ULID's (false by default), set to true if you want them
 ```
 Example generating 100 unique male names with ULID's :
-```Shell
+```bash
 shnm -n 100 -g m -u
 ```
 
