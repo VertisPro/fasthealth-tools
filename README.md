@@ -7,7 +7,7 @@
     />
 </p>
 
-FastHealth-Tools is a set of open source data munging tools (and utilities) for healthcare data provided by [VertisPro][]. 
+FastHealth-Tools are a set of open source data munging tools (and utilities) for healthcare data provided by [VertisPro][]. 
 
 The aim is to provide a set of simple but powerful tools that can operate on healthcare data to carry out identification, cleanup, structuring and transformation operations which are often required when preparing data for use in analytics, machine learning and AI.
 
@@ -16,7 +16,7 @@ Some tools may require an understanding of healthcare IT topics like [FHIR][] an
 ## Tools
 
 ### Clinical Text Spell Checker (under construction)
-The tool does spell check over blobs of clinical text and provides suggestions that may be used to clean up unstructured clinical data. This is especially useful in cases where a part of clinical data comes from summaries, notes and reports (mostly in lab and radiology environments) and needs to be cleaned before processing into tools like [Word2vec][], clinical context determination (part of fasthealth). A large dictionary of (US/AU) medical and (US) english words has been provided and it is easy to plug in your own. The input is a csv file with column informaiton and the output Spelling suggestions are provided as an extra column in the same csv file for easy correlation. This tool uses the ENCHANT library (2.2.1) which needs to be compiled for your platform and linked with the app.
+The tool carries out spell check over blobs of clinical text and provides suggestions that may be used to clean up unstructured clinical data. This is especially useful in cases where a part of clinical data comes from summaries, notes and reports (mostly in lab and radiology environments) and needs to be cleaned before processing into tools like [Word2vec][], clinical context determination (part of fasthealth). A large dictionary of (US/AU) medical and (US) english words has been provided and it is easy to plug in your own. The input needs is a csv file with column information and the output spelling suggestions are provided as an extra column in the same csv file for easy correlation. This tool uses the ENCHANT library (2.2.1) which needs to be compiled for your platform and linked with the app.
 
 ### Sensible Human Name Masking Tool (SHNM)
 The tool produces sensible human names along with masking information. This could be used for example to effectively mask patient, next-of-kin, clinican names with sensible sounding names and provide corelated informaion with the mask so that data could be re-identified in the future. This (sort of) ensures compliance with certain GDPR requirements where data can be retroactively deleted from the extracted set at a later time by simply providing a ID that needs to be deleted.
